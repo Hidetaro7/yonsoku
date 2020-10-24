@@ -1,0 +1,108 @@
+
+.wf-Hannari { font-family: "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Hannari", serif; }
+
+.container {
+  padding: 1rem;
+}
+
+@screen lg {
+  .container {
+    margin: auto;
+    padding: 0;
+    width: 800px;
+  }
+}
+
+.hero-image {
+  background: url(/image/hero_image_2.jpg) no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  width: 100vw;
+
+  @apply mb-8;
+
+  h1 {
+    @apply text-gray-100;
+
+    font-size: 8vw;
+    left: 1em;
+    position: absolute;
+    text-shadow: 0 0 1px #333;
+    top: 50%;
+    transform: translateY(-25%);
+
+    b {
+      font-size: 10vw;
+      font-weight: normal;
+    }
+  }
+}
+
+@screen lg {
+  .hero-image {
+    background-attachment: fixed;
+
+    h1 {
+      font-size: 4vw;
+
+      b {
+        font-size: 5vw;
+      }
+    }
+  }
+}
+
+.tweeted {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 2rem;
+  margin-top: -7rem;
+  position: relative;
+  z-index: 2;
+}
+
+.feature-image {
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  height: 80vw;
+  margin: auto;
+  width: 80vw;
+
+  img {
+    height: auto;
+    margin: 0 !important;
+    width: 10%;
+  }
+}
+
+.youtube {
+  height: 0;
+  overflow: hidden;
+  padding: 30px 0 56.25%;
+  position: relative;
+
+  iframe {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}
+
+@screen lg {
+  .feature-image {
+    height: 400px;
+    width: 400px;
+  }
+}
+
+.template-text {
+  border: 1px solid #ccc;
+  padding: 0.6rem;
+  width: 100%;
+}
